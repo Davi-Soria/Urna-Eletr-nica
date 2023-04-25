@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Urna eletrônica</title>
+</head>
+<body>
+    <div class="urna">
+        <div id="tela">
+            <div class="d-1">
+                <div class="d-1-left">
+                    <div class="d-1-1"><span>SEU VOTO PARA</span></div>
+                    <div class="d-1-2"><span>VERADOR</span></div>
+                    <div class="d-1-3">
+                        <div class="numero pisca"></div>
+                        <div class="numero"></div>
+                    </div>
+                    <div class="d-1-4">
+                        <span>nome: FULANO DE TAL</span>
+                        <span> partido: QQQ</span>
+                        <span> Vice-prefeito: BELTRANO DE TAL</span>
+                    </div>
+                </div>
+                <div class="d-1-right">
+                    <div class="verador"><img src="assets/images/84.jpg">Prefeito</div>
+                    <div class="vice"><img src="assets/images/84_2.jpg">Vice-prefeito</div>
+                </div>
+            </div>
+            <div class="d-2"> Aperte a tecla:</br> CONFIRMA para confirmar seu voto </br> CORRIGE para corrigir seu voto</div>
+        </div>
+        <div id="teclado">
+            <div class="t-1" onclick="clicou(1)">1</div>
+            <div class="t-1" onclick="clicou(2)">2</div>
+            <div class="t-1" onclick="clicou(3)">3</div>
+            <div class="t-1" onclick="clicou(4)">4</div>
+            <div class="t-1" onclick="clicou(5)">5</div>
+            <div class="t-1" onclick="clicou(6)">6</div>
+            <div class="t-1" onclick="clicou(7)">7</div>
+            <div class="t-1" onclick="clicou(8)">8</div>
+            <div class="t-1" onclick="clicou(9)">9</div>
+            <div class="t-1 zero" onclick="clicou(0)">0</div>
+            <div class="t-1 confirma" onclick="confirma()">confirma</div>
+            <div class="t-1 corrige" onclick="corrige()">corrige</div>
+            <div class="t-1 branco" onclick="branco()">branco</div>
+
+        </div>
+    </div>
+    <div class="resultado"></div>
+    
+
+    <script src="assets/js/etapas.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
